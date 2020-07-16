@@ -1,0 +1,342 @@
+body {
+  overflow: hidden;
+}
+
+.sky {
+  position: relative;
+  height: 55vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#020a16), to(#0a3679));
+  background-image: linear-gradient(to bottom, #020a16, #0a3679);
+  -webkit-animation: sky 15s infinite linear;
+          animation: sky 15s infinite linear;
+}
+
+.moon {
+  position: absolute;
+  height: 15vh;
+  width: 15vh;
+  background-color: gold;
+  border: 1px solid gold;
+  border-radius: 50%;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  margin: 50px 100px;
+  -webkit-animation: moon 15s infinite linear;
+          animation: moon 15s infinite linear;
+}
+
+.star {
+  position: relative;
+  height: 100%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.squares {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 1px;
+  height: 1px;
+  margin: 50px;
+  background-color: #f3f8a8de;
+  border-radius: 50%;
+  -webkit-animation: star 1.4s infinite;
+          animation: star 1.4s infinite;
+}
+
+.squares:nth-child(2n) {
+  -webkit-animation: star 1s infinite;
+          animation: star 1s infinite;
+}
+
+.squares:nth-child(3n) {
+  -webkit-animation: star .5s .5s infinite;
+          animation: star .5s .5s infinite;
+}
+
+.squares:nth-child(4n) {
+  -webkit-animation: star .8s .1s infinite;
+          animation: star .8s .1s infinite;
+}
+
+.squares:nth-child(5n) {
+  -webkit-animation: star 1s .7s infinite;
+          animation: star 1s .7s infinite;
+}
+
+.ground {
+  height: 45vh;
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#300101), to(#000000));
+  background-image: linear-gradient(to bottom, #300101, #000000);
+}
+
+.montain {
+  position: absolute;
+  height: 80vh;
+  width: 150vh;
+  border-radius: 75%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#050c02), color-stop(#232921), to(#1a2417));
+  background-image: linear-gradient(to right, #050c02, #232921, #1a2417);
+}
+
+.front1 {
+  top: -80px;
+  left: -10vh;
+}
+
+.back1 {
+  top: -10px;
+  left: -30vh;
+}
+
+.front2 {
+  top: -40px;
+  left: 85vh;
+}
+
+.back2 {
+  top: 20px;
+  left: 100vh;
+}
+
+.road {
+  height: 25vh;
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  background-color: #313131;
+}
+
+.car {
+  position: absolute;
+  height: 150px;
+  width: 500px;
+  top: -100px;
+  background-color: #f78e39;
+  border-radius: 15px;
+  -webkit-animation: car 10s ease-in infinite;
+          animation: car 10s ease-in infinite;
+}
+
+.front-window {
+  position: absolute;
+  height: 75px;
+  width: 70px;
+  background-color: #a1e1f5;
+  top: 15px;
+  left: 10px;
+  border-top-left-radius: 10px;
+}
+
+.center-window {
+  position: absolute;
+  height: 75px;
+  width: 120px;
+  background-color: #a1e1f5;
+  top: 15px;
+  left: 120px;
+}
+
+.right {
+  left: 250px;
+}
+
+.rear-window {
+  position: absolute;
+  height: 75px;
+  width: 70px;
+  background-color: #a1e1f5;
+  top: 15px;
+  left: 420px;
+  border-top-right-radius: 10px;
+}
+
+.front-wheel, .rear-wheel {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 100px;
+  left: 10px;
+  background-color: #5e5858;
+  border: 10px dashed black;
+  border-radius: 50%;
+  -webkit-animation: wheels 2s infinite linear;
+          animation: wheels 2s infinite linear;
+}
+
+.rear-wheel {
+  left: 100px;
+}
+
+.front-pair-wheel1 {
+  left: 330px;
+}
+
+.front-pair-wheel2 {
+  left: 420px;
+}
+
+@-webkit-keyframes moon {
+  0% {
+    top: 500px;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  25% {
+    -webkit-filter: blur(30px);
+            filter: blur(30px);
+  }
+  50% {
+    top: 50px;
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+  }
+  60% {
+    top: 50px;
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+  }
+  75% {
+    -webkit-filter: blur(20px);
+            filter: blur(20px);
+  }
+  100% {
+    top: 500px;
+    -webkit-filter: blur(45px);
+            filter: blur(45px);
+  }
+}
+
+@keyframes moon {
+  0% {
+    top: 500px;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  25% {
+    -webkit-filter: blur(30px);
+            filter: blur(30px);
+  }
+  50% {
+    top: 50px;
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+  }
+  60% {
+    top: 50px;
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+  }
+  75% {
+    -webkit-filter: blur(20px);
+            filter: blur(20px);
+  }
+  100% {
+    top: 500px;
+    -webkit-filter: blur(45px);
+            filter: blur(45px);
+  }
+}
+
+@-webkit-keyframes car {
+  from {
+    left: -500px;
+  }
+  to {
+    left: 1500px;
+  }
+}
+
+@keyframes car {
+  from {
+    left: -500px;
+  }
+  to {
+    left: 1500px;
+  }
+}
+
+@-webkit-keyframes wheels {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes wheels {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes sky {
+  0% {
+    background: #090314;
+  }
+  40% {
+    background-color: #033a8d;
+  }
+  60% {
+    background-color: #033a8d;
+  }
+  100% {
+    background: #090314;
+  }
+}
+
+@keyframes sky {
+  0% {
+    background: #090314;
+  }
+  40% {
+    background-color: #033a8d;
+  }
+  60% {
+    background-color: #033a8d;
+  }
+  100% {
+    background: #090314;
+  }
+}
+
+@-webkit-keyframes star {
+  10% {
+    opacity: 1;
+    background-color: #f6fa07;
+  }
+  50% {
+    opacity: 0;
+    background-color: #f2f7b7;
+  }
+  90% {
+    opacity: 1;
+    background-color: #eeede7;
+  }
+}
+
+@keyframes star {
+  10% {
+    opacity: 1;
+    background-color: #f6fa07;
+  }
+  50% {
+    opacity: 0;
+    background-color: #f2f7b7;
+  }
+  90% {
+    opacity: 1;
+    background-color: #eeede7;
+  }
+}
+/*# sourceMappingURL=style.css.map */

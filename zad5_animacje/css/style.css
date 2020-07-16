@@ -1,0 +1,44 @@
+body {
+  font-family: sans-serif;
+  font-size: 36px;
+}
+
+.squere {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border: solid 1px black;
+  -webkit-animation: test 2s .5s 5;
+          animation: test 2s .5s 5;
+}
+
+@-webkit-keyframes test {
+  0% {
+    width: 500px;
+    background-color: #fff;
+  }
+  50% {
+    width: 50px;
+    background-color: lime;
+  }
+  100% {
+    width: 300px;
+    background-color: red;
+  }
+}
+
+@keyframes test {
+  0% {
+    width: 500px;
+    background-color: #fff;
+  }
+  50% {
+    width: 50px;
+    background-color: lime;
+  }
+  100% {
+    width: 300px;
+    background-color: red;
+  }
+}
+/*# sourceMappingURL=style.css.map */

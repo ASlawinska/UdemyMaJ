@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+  font-size: 10px;
+  color: black;
+  background-color: #000000;
+  text-align: center;
+}
+
+p {
+  font-size: 1.6rem;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p:nth-child(2n) {
+  color: lime;
+}
+
+table, tr, td {
+  border: 1px solid white;
+  text-align: center;
+  text-size: 1.6rem;
+  color: black;
+}
+
+table td, tr td, td td {
+  width: 380px;
+  height: 180px;
+}
+
+table tr:nth-child(2n), tr tr:nth-child(2n), td tr:nth-child(2n) {
+  background-color: #fafafa;
+}
+
+table tr:nth-child(2n+1), tr tr:nth-child(2n+1), td tr:nth-child(2n+1) {
+  background: violet;
+}
+/*# sourceMappingURL=style.css.map */
