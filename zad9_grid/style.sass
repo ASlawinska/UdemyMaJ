@@ -1,0 +1,117 @@
+body
+    overflow: hidden
+.sky
+    position: relative
+    height: 55vh
+    background-image: linear-gradient(to bottom, #4b87e0, #0a3679) 
+    animation: sky 15s infinite linear
+
+.sun
+    position: absolute
+    height: 20vh
+    width: 20vh
+    background-color: gold
+    border: 1px solid gold 
+    border-radius: 50%
+    filter: blur(10px)
+    margin: 50px 100px
+    animation: sun 15s infinite linear
+
+.ground
+    height: 45vh
+    position: relative
+    background-image: linear-gradient(to bottom,  #300101, #000000)
+.grass
+    position: absolute
+    height: 30vh
+    width: 100%
+    top: 0
+    background-image: linear-gradient(to right, #49ec09, #1d5208, #49ec09) 
+
+.road
+    height: 15vh
+    position: absolute
+    width: 100%
+    top: 50px
+    background-color: #313131
+
+.car
+    position: absolute
+    height: 150px
+    width: 200px
+    top: -100px
+    background-color: #7a0606
+    border-radius: 15px
+    animation: car 10s ease-in infinite
+.front-window
+    position: absolute
+    height: 75px
+    width: 70px
+    background-color: #a1e1f5
+    top: 15px
+    left: 10px
+    border-top-left-radius: 10px
+.rear-window
+    position: absolute
+    height: 75px
+    width: 70px
+    background-color: #a1e1f5
+    top: 15px
+    left: 120px
+    border-top-right-radius: 10px
+.front-wheel
+    position: absolute
+    height: 50px
+    width: 50px
+    top: 100px
+    left: 10px
+    background-color: #5e5858
+    border: 10px dashed black 
+    border-radius: 50%
+    animation: wheels 2s infinite linear 
+.rear-wheel
+    position: absolute
+    height: 50px
+    width: 50px
+    top: 100px
+    left: 100px
+    background-color: #5e5858
+    border: 10px dashed black 
+    border-radius: 50%
+    animation: wheels 2s infinite linear 
+@keyframes sun 
+    0%
+        top: 500px
+        filter: blur(5px)
+    25%
+        filter: blur(30px)
+    50% 
+        top: 50px
+        filter: blur(1px)
+    75%
+        filter: blur(30px)
+    100%
+        top: 500px
+        filter: blur(45px)
+@keyframes car
+    from
+        left: -500px
+    to
+        left: 1500px
+@keyframes wheels
+    0%
+        transform: rotate(0)
+    100%
+        transform: rotate(360deg)
+@keyframes sky
+    0%
+        background: #090314
+    40%
+        background-color: #97bef8
+    60%
+        background-color: #81b0f7
+    100%
+        background: #090314   
+ 
+
+
